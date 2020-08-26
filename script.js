@@ -398,3 +398,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Agent Top Bar Links JS
+if (HelpCenter && HelpCenter.user) {
+  var role;
+  role =  HelpCenter.user.role;
+  if (role == 'manager' || role == 'agent') {
+    $('div.agent-links').show();
+  }
+}
