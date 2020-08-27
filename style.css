@@ -4617,7 +4617,9 @@ html[dir="rtl"] .notification-left-aligned {
 div.agent-links {
   padding-top: 5px;
   padding-bottom: 5px;
+  /* display: none; */
 }
+
 
 div.agent-links .header-inner {
   height: auto;
