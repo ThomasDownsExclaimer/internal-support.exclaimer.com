@@ -4530,3 +4530,164 @@ html[dir="rtl"] .notification-left-aligned {
 .dropdown-chevron-icon {
   vertical-align: middle;
 }
+
+.notify{
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.75em;
+  font-size: 0.9em;
+  border: 1px solid #dfe3ee;
+  border-radius: 5px;
+}
+.notify--info{
+  background-color: rgba(1, 204, 220, 0.1);
+  border-color: #03d0ff;
+  color: #03d0ff;
+}
+.notify--info::before{
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Pro"; 
+  font-weight: 900;
+  content: "\f05a";
+}
+.notify--success{
+  background-color: rgba(7, 149, 66, 0.1);
+  border-color: #0ad406;
+  color: #0ad406;
+}
+.notify--success::before{
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Pro"; 
+  font-weight: 900;
+  content: "\f058";
+}
+.notify--warning{
+  background-color: rgba(220, 128, 1, 0.1);
+  border-color: #ffb103;
+  color: #ffb103;
+}
+.notify--warning::before{
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Pro"; 
+  font-weight: 900;
+  content: "\f071";
+}
+.notify--danger{
+  background-color: rgba(220, 17, 1, 0.1);
+  border-color: #ff0303;
+  color: #ff0303;
+}
+.notify--danger::before{
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Pro"; 
+  font-weight: 900;
+  content: "\f00d";
+}
+.notify--code-block{
+  background-color: rgba(223, 227, 238, 0.4);
+  border-color: #b1b4bc;
+  color: #989ba2;
+  font-family: 'Courier New', Courier, monospace;;
+  font-style: italic;
+}
+.notify--code-block::before{
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 900;
+  content: "\f121";
+}
+.notify--error-code{
+  background-color: rgba(223, 227, 238, 0.4);
+  border-color: #ff0303;
+  color: #ff0303;
+  font-family: 'Courier New', Courier, monospace;;
+  font-style: italic;
+}
+.notify--error-code::before{
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 900;
+  content: "\f121";
+}
+
+/* Agent Links Top Bar CSS */
+div.agent-links {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* display: none; */
+}
+
+
+div.agent-links .header-inner {
+  height: auto;
+}
+div.agent-links ul {
+  display: flex;
+  flex-flow: row;
+  margin: 10px 0;
+  /* justify-content: right; */
+}
+div.agent-links li {
+  list-style: none;
+  margin-left: 15px;
+}
+div.agent-links li a {
+  color:$brand_color;
+  background-color: transparent;
+  border: 1px solid $brand_color;
+  border-radius: 4px;
+  padding: 15px;
+  transition: ease all 0.3s;
+}
+div.agent-links li a:hover {
+  color:#FFF;
+  background-color: $brand_color;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+/* Dropdown test */
+.dropbtn {
+  background-color:transparent;
+  color: $brand_color;
+  border: 1px solid $brand_color;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 0;
+  transition: ease all 0.3s;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:$brand_color;
+  color:#fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #fff;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

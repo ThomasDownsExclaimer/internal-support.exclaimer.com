@@ -398,3 +398,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+var weights = {"anonymous":10,"end_user":20,"agent":30,"manager":40};
+if (weights[HelpCenter.user.role]>=weights["agent"]){
+  $("div.agent").show();
+}
