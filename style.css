@@ -4615,10 +4615,10 @@ html[dir="rtl"] .notification-left-aligned {
 
 /* Agent Links Top Bar CSS */
 div.agent-links {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  /* display: none; */
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
 div.agent-links .header-inner {
   height: auto;
 }
@@ -4648,26 +4648,33 @@ div.agent-links li a:hover {
 }
 
 /* Dropdown test */
-div.agent-links .dropbtn {
+.dropbtn {
   background-color:transparent;
-  color: #fff;
+  color: $brand_color;
   border: 1px solid $brand_color;
   border-radius: 4px;
   padding: 15px;
+  margin: 0;
   transition: ease all 0.3s;
 }
 
-div.agent-links .dropdown {
+.dropdown:hover .dropbtn {
+  background-color:$brand_color;
+  color:#fff;
+}
+
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-div.agent-links .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px #fff;
+  padding-top: 5px;
   z-index: 1;
 }
 
@@ -4675,11 +4682,10 @@ div.agent-links .dropdown-content {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #fff;}
+.dropdown-content a:hover {
+  background-color: #fff;
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: $brand_color;} 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
