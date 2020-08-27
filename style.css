@@ -4612,3 +4612,82 @@ html[dir="rtl"] .notification-left-aligned {
   font-weight: 900;
   content: "\f121";
 }
+
+/* Agent Links Top Bar CSS */
+div.agent-links {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* display: none; */
+}
+
+
+div.agent-links .header-inner {
+  height: auto;
+}
+div.agent-links ul {
+  display: flex;
+  flex-flow: row;
+  margin: 10px 0;
+  /* justify-content: right; */
+}
+div.agent-links li {
+  list-style: none;
+  margin-left: 15px;
+}
+div.agent-links li a {
+  color:$brand_color;
+  background-color: transparent;
+  border: 1px solid $brand_color;
+  border-radius: 4px;
+  padding: 15px;
+  transition: ease all 0.3s;
+}
+div.agent-links li a:hover {
+  color:#FFF;
+  background-color: $brand_color;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+/* Dropdown test */
+.dropbtn {
+  background-color:transparent;
+  color: $brand_color;
+  border: 1px solid $brand_color;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 0;
+  transition: ease all 0.3s;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:$brand_color;
+  color:#fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #fff;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
