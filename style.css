@@ -1050,7 +1050,7 @@ ul {
   border: 1px solid $brand_color;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $brand_color;
+  background-color: #576476;
   display: flex;
   flex: 1 0 340px;
   margin: 0 0 30px;
@@ -1065,11 +1065,11 @@ ul {
 }
 
 .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
+  background-color: $background_color;
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
+  color: $brand_color;
   text-decoration: none;
 }
 
@@ -1090,7 +1090,7 @@ ul {
 }
 
 .blocks-item-link {
-  color: $brand_color;
+  color: $background_color;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -4635,24 +4635,24 @@ div.agent-links li {
   margin-left: 15px;
 }
 div.agent-links li a {
-  color:$brand_color;
-  background-color: transparent;
+  color:$brand_text_color;
+  background-color: $brand_color;
   border: 1px solid $brand_color;
   border-radius: 4px;
   padding: 15px;
   transition: ease all 0.3s;
 }
 div.agent-links li a:hover {
-  color:#FFF;
-  background-color: $brand_color;
+  color:$brand_color;
+  background-color: $brand_text_color;
   border-radius: 4px;
   padding: 15px;
 }
 
 /* Dropdown test */
 .dropbtn {
-  background-color:transparent;
-  color: $brand_color;
+  background-color:$brand_color;
+  color: $brand_text_color;
   border: 1px solid $brand_color;
   border-radius: 4px;
   padding: 15px;

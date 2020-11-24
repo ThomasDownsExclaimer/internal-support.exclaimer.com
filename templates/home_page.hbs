@@ -64,20 +64,14 @@
     {{/if}}
   </section>
 
-  {{#if help_center.community_enabled}}
-    <section class="section home-section community">
-      <h2>{{t 'community'}}</h2>
-      {{#link 'community' class='community-link'}}
-        {{t 'join_conversation'}}
-      {{/link}}
-
-      <div class="community-image"></div>
-    </section>
-  {{/if}}
-
   <section class="section home-section activity">
     {{#if settings.show_recent_activity}}
       {{recent_activity}}
     {{/if}}
   </section>
+
+{{!--   <div style="margin: auto auto;padding: 5% 5%;">
+  <iframe class="container" src="https://share.geckoboard.com/dashboards/WVKSNWGKI3R67425" height=600></iframe>
+  </div> --}}
+
 </div>
