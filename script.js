@@ -399,7 +399,27 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-var weights = {"anonymous":10,"end_user":20,"agent":30,"manager":40};
-if (weights[HelpCenter.user.role]>=weights["agent"]){
-  $("div.agent").show();
-}
+$( document ).ready(function() {
+  //Store the ticket form ID
+  const ticketForm = location.search.split("ticket_form_id=")[1];
+
+ //Create if statement for each of your forms
+ if (ticketForm == 360000370578) {
+
+     //Change the description text
+     $('label[for=request_collaborators_]').html("Add any customer email addresses here");
+     $('.form-field.request_description').append('<p id="request_description_hint">Anything that is entered into this field will be hidden from customers as it will be logged as an internal note</p>');
+
+ }
+
+ var tagsToRemove = ['as','ia','mu','sm','exchange_address_tagging','outlook_photos'];
+ removeTagsWeDontWant();
+ function removeTagsWeDontWant() {
+   $(".nesty-panel").on("DOMNodeInserted", function () {
+     for (var i in tagsToRemove) {
+       $("li#" + tagsToRemove[i]).remove();
+     }
+   });
+ }
+ 
+});
