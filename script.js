@@ -399,9 +399,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-
-
 $( document ).ready(function() {
   //Store the ticket form ID
   const ticketForm = location.search.split("ticket_form_id=")[1];
@@ -414,4 +411,15 @@ $( document ).ready(function() {
      $('.form-field.request_description').append('<p id="request_description_hint">Anything that is entered into this field will be hidden from customers as it will be logged as an internal note</p>');
 
  }
+
+ var tagsToRemove = ['as','ia','mu','sm','exchange_address_tagging','outlook_photos'];
+ removeTagsWeDontWant();
+ function removeTagsWeDontWant() {
+   $(".nesty-panel").on("DOMNodeInserted", function () {
+     for (var i in tagsToRemove) {
+       $("li#" + tagsToRemove[i]).remove();
+     }
+   });
+ }
+ 
 });
