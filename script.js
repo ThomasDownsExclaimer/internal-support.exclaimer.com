@@ -404,7 +404,7 @@ $( document ).ready(function() {
   const ticketForm = location.search.split("ticket_form_id=")[1];
 
  //Create if statement for each of your forms
- if (ticketForm == 360000370578) {
+ if (ticketForm == 360001297031) {
 
      //Change the description text
      $('label[for=request_collaborators_]').html("Add any customer email addresses here");
