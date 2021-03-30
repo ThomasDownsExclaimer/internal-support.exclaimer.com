@@ -421,5 +421,12 @@ $( document ).ready(function() {
      }
    });
  }
- 
+ if (HelpCenter.user.role=="manager"){
+  $("div.exclaimer").show();
+ }
+
+ if (HelpCenter.user.role=="agent"){
+  $("div.exclaimer").show();
+ }
 });
+
